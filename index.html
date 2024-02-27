@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Реватт</title>
+	<meta name="description" content="">
+	<link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/fonts.css">
+</head>
+
+<body>
+
+	<div class="preloader">
+		<div class="preloader__overlay"></div>
+		<div class="preloader__wrapper">
+			<div class="preloader__logo">
+				<svg width="194" height="24" viewBox="0 0 194 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M77.7663 0.857758L73.5759 4.26639C72.3688 5.27777 70.8322 5.82501 69.2488 5.80747H50.6305C49.9644 5.79865 49.3114 5.98995 48.758 6.35598L44.217 9.2814H71.7542C71.8069 9.28121 71.8584 9.29723 71.9014 9.32722C71.9445 9.35721 71.977 9.3997 71.9944 9.44877C72.0119 9.49783 72.0135 9.55104 71.9989 9.60102C71.9843 9.65099 71.9543 9.69524 71.913 9.72761L67.7227 13.1363C66.5163 14.1493 64.9794 14.6974 63.3956 14.6795H38.4387L40.3751 17.1609C40.6107 17.4738 40.9185 17.7268 41.2728 17.899C41.6272 18.0712 42.018 18.1577 42.413 18.1513H65.89C65.9431 18.1511 65.9949 18.1672 66.0384 18.1973C66.0819 18.2273 66.115 18.2699 66.1331 18.3192C66.1512 18.3684 66.1534 18.422 66.1395 18.4726C66.1256 18.5232 66.0962 18.5683 66.0554 18.6018L61.865 22.0104C60.6524 23.0215 59.1096 23.5643 57.5225 23.5385H34.3146C34.0522 23.542 33.7925 23.4848 33.5566 23.3714C33.3207 23.258 33.115 23.0916 32.956 22.8855L25.2722 13.0209L25.2193 12.9142L25.2391 12.7684L25.3075 12.6726L25.4487 12.6139H25.4994C29.4427 12.1785 33.8426 11.1729 37.1662 8.93966C38.5865 7.98629 39.1688 6.79566 39.0232 5.84447C38.6549 3.41968 33.6287 3.6134 31.7607 3.76359C27.7291 4.08356 23.8674 5.87276 21.5693 9.2814L13.5966 21.1028C12.6747 22.4697 11.7286 23.5493 8.69168 23.5493H0L11.2301 7.10039C15.2573 1.20167 21.6178 0.418077 27.4336 0.418077H77.5921C77.6451 0.41651 77.6973 0.432013 77.7406 0.462244C77.784 0.492474 77.8162 0.535792 77.8325 0.585677C77.8501 0.632375 77.8533 0.68322 77.8415 0.731694C77.8297 0.780169 77.8035 0.824064 77.7663 0.857758Z" fill="#9AC31C"/>
+					<path d="M96.9363 12.8598C96.4364 12.1038 95.4454 11.7251 93.9633 11.7236H82.1377C81.742 11.7241 81.3536 11.8281 81.0119 12.025C80.6702 12.222 80.3874 12.5047 80.1925 12.8446L73.5762 23.5341H76.8535C77.1482 23.5386 77.4389 23.466 77.6961 23.3238C77.9533 23.1816 78.1678 22.9748 78.3179 22.7244L80.6799 18.924H85.4966L86.7118 22.0714C86.8605 22.4971 87.1394 22.8668 87.5099 23.1295C87.8804 23.3923 88.3243 23.5352 88.7805 23.5385H92.3269L90.3574 18.7216C91.6853 18.5839 92.979 18.2208 94.1817 17.6485C95.3726 17.0738 96.2173 16.3773 96.7268 15.5567C97.3641 14.5228 97.4413 13.6238 96.9363 12.8598ZM91.6432 15.4326C91.3168 15.9594 90.6728 16.3664 89.709 16.6603C88.9437 16.8921 88.1476 17.0102 87.347 17.0107H81.8488L83.1963 14.8341C83.3915 14.4933 83.6748 14.2098 84.0174 14.0125C84.3599 13.8152 84.7493 13.7111 85.146 13.7109H89.2569C90.3111 13.7109 91.0566 13.856 91.4932 14.1462C91.9277 14.464 91.9784 14.8863 91.6388 15.437L91.6432 15.4326Z" fill="white"/>
+					<path d="M116.644 11.728L116.031 12.7184C115.834 13.0579 115.551 13.3402 115.208 13.5366C114.866 13.7331 114.477 13.8368 114.081 13.8372H107.877C107.278 13.8319 106.681 13.8903 106.095 14.0113C105.497 14.1554 104.918 14.3657 104.368 14.6382C103.849 14.8712 103.36 15.1634 102.91 15.5089C102.552 15.8102 102.245 16.1667 102.002 16.5646H113.761L113.148 17.5549C112.952 17.8948 112.669 18.1775 112.326 18.3744C111.984 18.5713 111.595 18.6753 111.198 18.6759H100.694C100.489 18.9771 100.354 19.3201 100.301 19.6793C100.287 19.9993 100.387 20.314 100.586 20.5674C100.792 20.8675 101.077 21.1068 101.411 21.2596C101.858 21.4377 102.338 21.5186 102.82 21.4968H110.696L110.122 22.4197C109.927 22.7598 109.645 23.0429 109.303 23.2402C108.961 23.4375 108.573 23.5419 108.177 23.5429H100.718C99.5201 23.5681 98.3287 23.3611 97.2115 22.9334C96.1375 22.4981 95.5486 21.7972 95.4317 20.8395C95.3148 19.8818 95.617 18.8326 96.3249 17.6855C97.0946 16.481 98.092 15.4338 99.2626 14.6012C100.605 13.6092 102.12 12.8672 103.733 12.4115C104.528 12.18 105.339 12.004 106.159 11.8848C106.955 11.7818 107.758 11.7317 108.561 11.7346L116.644 11.728Z" fill="white"/>
+					<path d="M147.618 11.7281L134.74 22.9726C134.339 23.3402 133.811 23.5426 133.265 23.5386H128.655L129.866 15.1911L121.525 22.9247C121.118 23.3212 120.568 23.542 119.997 23.5386H115.605L117.165 11.7281L121.465 11.6802L120.158 20.5478L128.887 12.3484C129.09 12.15 129.331 11.9931 129.596 11.8866C129.861 11.7802 130.144 11.7263 130.43 11.7281H134.636L133.326 20.6523L142.192 12.2069C142.348 12.0532 142.534 11.9319 142.739 11.8504C142.943 11.7689 143.163 11.7288 143.383 11.7324L147.618 11.7281Z" fill="white"/>
+					<path d="M156.937 23.5386L156.569 11.7281H152.979C152.465 11.7239 151.967 11.9024 151.576 12.2309L137.554 23.5386H141.354C141.757 23.5438 142.149 23.4046 142.456 23.1468L145.251 20.8526H152.56L152.474 23.5386H156.937ZM152.526 18.7892H147.749L152.674 14.6339L152.526 18.7892Z" fill="white"/>
+					<path d="M175.909 13.7306H170.012L164.469 22.7006C164.323 22.9466 164.113 23.1504 163.862 23.2921C163.611 23.4337 163.327 23.5082 163.038 23.5082L159.544 23.5713L165.576 13.809H159.011L159.635 12.86C159.83 12.5212 160.113 12.2392 160.454 12.0424C160.795 11.8457 161.183 11.741 161.578 11.739L175.399 11.6606L175.909 13.7306Z" fill="white"/>
+					<path d="M194 11.6494L193.451 12.5397C193.245 12.8898 192.953 13.1826 192.601 13.3908C192.249 13.599 191.85 13.7158 191.44 13.7303H186.028L180.496 22.6807C180.346 22.9311 180.132 23.1379 179.874 23.2801C179.617 23.4223 179.327 23.4948 179.032 23.4904H175.514L181.555 13.7303H176.738L176.224 11.6494H194Z" fill="white"/>
+				</svg>
+			</div>
+			<div class="preloader__progressbar">
+				<div class="percent">
+					<div class="value">0</div>
+					<div class="symbol">%</div>
+				</div>
+				<div class="progressbar">
+					<div class="line"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal">
+		<div class="modal__overlay"></div>
+		<div class="modal__wrapper">
+			<div class="modal__close">
+				<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M5.05078 5.05029L14.9503 14.9498" stroke="black" stroke-width="1.40903"/>
+					<path d="M5.05078 14.95L14.9503 5.05046" stroke="black" stroke-width="1.40903"/>
+				</svg>					
+			</div>
+			<h3 class="modal__title">Оставить заявку</h3>
+			<p class="modal__subtitle">Оставьте заявку, и наш менеджер свяжется с вами </p>
+			<form action="#">
+				<input type="text" name="name" placeholder="Имя" class="modal__input">
+				<input type="tel" name="name" placeholder="Телефон" class="modal__input">
+				<input type="email" name="name" placeholder="Почта" class="modal__input">
+				<div class="submit__wrapper">
+					<input type="submit" value="Отправить" class="modal__submit">
+					<div class="modal__politics">Заполняя форму, вы соглашаетесь на <a href="#">обработку персональных данных</a></div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="modal__nav">
+		<div class="modal__nav__wrapper">
+			<div class="modal__nav__list">
+				<a href="#main" class="nav__link">Главная</a>
+				<a href="#advantages" class="nav__link">Преимущества</a>
+				<a href="#products" class="nav__link">Продукты</a>
+				<a href="#apply" class="nav__link">Применение</a>
+				<a href="#about" class="nav__link">О нас</a>
+				<a href="#partners" class="nav__link">Партнеры</a>
+				<a href="#contacts" class="nav__link">Контакты</a>
+			</div>
+			<div class="modal__nav__btns">
+				<a href="#" class="modal__call modal__btn">Заказать звонок</a>
+				<a href="mailto:info@rewatt.tech" class="mail__icon"><img src="img/mail__icon.svg" alt=""></a>
+			</div>
+		</div>
+	</div>
+
+	<header class="header">
+		<div class="section__wrapper">
+			<div class="logo__wrapper">
+				<a href="/" class="logo">
+					<svg width="194" height="24" viewBox="0 0 194 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M77.7663 0.857758L73.5759 4.26639C72.3688 5.27777 70.8322 5.82501 69.2488 5.80747H50.6305C49.9644 5.79865 49.3114 5.98995 48.758 6.35598L44.217 9.2814H71.7542C71.8069 9.28121 71.8584 9.29723 71.9014 9.32722C71.9445 9.35721 71.977 9.3997 71.9944 9.44877C72.0119 9.49783 72.0135 9.55104 71.9989 9.60102C71.9843 9.65099 71.9543 9.69524 71.913 9.72761L67.7227 13.1363C66.5163 14.1493 64.9794 14.6974 63.3956 14.6795H38.4387L40.3751 17.1609C40.6107 17.4738 40.9185 17.7268 41.2728 17.899C41.6272 18.0712 42.018 18.1577 42.413 18.1513H65.89C65.9431 18.1511 65.9949 18.1672 66.0384 18.1973C66.0819 18.2273 66.115 18.2699 66.1331 18.3192C66.1512 18.3684 66.1534 18.422 66.1395 18.4726C66.1256 18.5232 66.0962 18.5683 66.0554 18.6018L61.865 22.0104C60.6524 23.0215 59.1096 23.5643 57.5225 23.5385H34.3146C34.0522 23.542 33.7925 23.4848 33.5566 23.3714C33.3207 23.258 33.115 23.0916 32.956 22.8855L25.2722 13.0209L25.2193 12.9142L25.2391 12.7684L25.3075 12.6726L25.4487 12.6139H25.4994C29.4427 12.1785 33.8426 11.1729 37.1662 8.93966C38.5865 7.98629 39.1688 6.79566 39.0232 5.84447C38.6549 3.41968 33.6287 3.6134 31.7607 3.76359C27.7291 4.08356 23.8674 5.87276 21.5693 9.2814L13.5966 21.1028C12.6747 22.4697 11.7286 23.5493 8.69168 23.5493H0L11.2301 7.10039C15.2573 1.20167 21.6178 0.418077 27.4336 0.418077H77.5921C77.6451 0.41651 77.6973 0.432013 77.7406 0.462244C77.784 0.492474 77.8162 0.535792 77.8325 0.585677C77.8501 0.632375 77.8533 0.68322 77.8415 0.731694C77.8297 0.780169 77.8035 0.824064 77.7663 0.857758Z" fill="#9AC31C"/>
+						<path d="M96.9363 12.8598C96.4364 12.1038 95.4454 11.7251 93.9633 11.7236H82.1377C81.742 11.7241 81.3536 11.8281 81.0119 12.025C80.6702 12.222 80.3874 12.5047 80.1925 12.8446L73.5762 23.5341H76.8535C77.1482 23.5386 77.4389 23.466 77.6961 23.3238C77.9533 23.1816 78.1678 22.9748 78.3179 22.7244L80.6799 18.924H85.4966L86.7118 22.0714C86.8605 22.4971 87.1394 22.8668 87.5099 23.1295C87.8804 23.3923 88.3243 23.5352 88.7805 23.5385H92.3269L90.3574 18.7216C91.6853 18.5839 92.979 18.2208 94.1817 17.6485C95.3726 17.0738 96.2173 16.3773 96.7268 15.5567C97.3641 14.5228 97.4413 13.6238 96.9363 12.8598ZM91.6432 15.4326C91.3168 15.9594 90.6728 16.3664 89.709 16.6603C88.9437 16.8921 88.1476 17.0102 87.347 17.0107H81.8488L83.1963 14.8341C83.3915 14.4933 83.6748 14.2098 84.0174 14.0125C84.3599 13.8152 84.7493 13.7111 85.146 13.7109H89.2569C90.3111 13.7109 91.0566 13.856 91.4932 14.1462C91.9277 14.464 91.9784 14.8863 91.6388 15.437L91.6432 15.4326Z" fill="white"/>
+						<path d="M116.644 11.728L116.031 12.7184C115.834 13.0579 115.551 13.3402 115.208 13.5366C114.866 13.7331 114.477 13.8368 114.081 13.8372H107.877C107.278 13.8319 106.681 13.8903 106.095 14.0113C105.497 14.1554 104.918 14.3657 104.368 14.6382C103.849 14.8712 103.36 15.1634 102.91 15.5089C102.552 15.8102 102.245 16.1667 102.002 16.5646H113.761L113.148 17.5549C112.952 17.8948 112.669 18.1775 112.326 18.3744C111.984 18.5713 111.595 18.6753 111.198 18.6759H100.694C100.489 18.9771 100.354 19.3201 100.301 19.6793C100.287 19.9993 100.387 20.314 100.586 20.5674C100.792 20.8675 101.077 21.1068 101.411 21.2596C101.858 21.4377 102.338 21.5186 102.82 21.4968H110.696L110.122 22.4197C109.927 22.7598 109.645 23.0429 109.303 23.2402C108.961 23.4375 108.573 23.5419 108.177 23.5429H100.718C99.5201 23.5681 98.3287 23.3611 97.2115 22.9334C96.1375 22.4981 95.5486 21.7972 95.4317 20.8395C95.3148 19.8818 95.617 18.8326 96.3249 17.6855C97.0946 16.481 98.092 15.4338 99.2626 14.6012C100.605 13.6092 102.12 12.8672 103.733 12.4115C104.528 12.18 105.339 12.004 106.159 11.8848C106.955 11.7818 107.758 11.7317 108.561 11.7346L116.644 11.728Z" fill="white"/>
+						<path d="M147.618 11.7281L134.74 22.9726C134.339 23.3402 133.811 23.5426 133.265 23.5386H128.655L129.866 15.1911L121.525 22.9247C121.118 23.3212 120.568 23.542 119.997 23.5386H115.605L117.165 11.7281L121.465 11.6802L120.158 20.5478L128.887 12.3484C129.09 12.15 129.331 11.9931 129.596 11.8866C129.861 11.7802 130.144 11.7263 130.43 11.7281H134.636L133.326 20.6523L142.192 12.2069C142.348 12.0532 142.534 11.9319 142.739 11.8504C142.943 11.7689 143.163 11.7288 143.383 11.7324L147.618 11.7281Z" fill="white"/>
+						<path d="M156.937 23.5386L156.569 11.7281H152.979C152.465 11.7239 151.967 11.9024 151.576 12.2309L137.554 23.5386H141.354C141.757 23.5438 142.149 23.4046 142.456 23.1468L145.251 20.8526H152.56L152.474 23.5386H156.937ZM152.526 18.7892H147.749L152.674 14.6339L152.526 18.7892Z" fill="white"/>
+						<path d="M175.909 13.7306H170.012L164.469 22.7006C164.323 22.9466 164.113 23.1504 163.862 23.2921C163.611 23.4337 163.327 23.5082 163.038 23.5082L159.544 23.5713L165.576 13.809H159.011L159.635 12.86C159.83 12.5212 160.113 12.2392 160.454 12.0424C160.795 11.8457 161.183 11.741 161.578 11.739L175.399 11.6606L175.909 13.7306Z" fill="white"/>
+						<path d="M194 11.6494L193.451 12.5397C193.245 12.8898 192.953 13.1826 192.601 13.3908C192.249 13.599 191.85 13.7158 191.44 13.7303H186.028L180.496 22.6807C180.346 22.9311 180.132 23.1379 179.874 23.2801C179.617 23.4223 179.327 23.4948 179.032 23.4904H175.514L181.555 13.7303H176.738L176.224 11.6494H194Z" fill="white"/>
+					</svg>
+				</a>
+
+				<nav>
+					<a href="#advantages" class="nav__link">Преимущества</a>
+					<a href="#products" class="nav__link">Продукты</a>
+					<a href="#apply" class="nav__link">Применение</a>
+					<a href="#about" class="nav__link">О нас</a>
+					<a href="#partners" class="nav__link">Партнеры</a>
+					<a href="#contacts" class="nav__link">Контакты</a>
+				</nav>
+			</div>
+
+			<div class="btns">
+				<div class="icons">
+					<a href="https://sk.ru/" class="sk"><img src="img/sk.svg" alt=""></a>
+					<a href="#" class="ru"><img src="img/ru.svg" alt=""></a>
+				</div>
+
+				<a href="tel:+7 (495) 115-99-51" class="call fw__500">
+					<img src="img/phone.svg" alt="">
+					<span>+7 (495) 115-99-51</span>
+				</a>
+
+				<div class="mail__wrapper">
+					<a href="#" class="mail fw__600 modal__btn">Заказать звонок</a>
+					<a href="mailto:info@rewatt.tech" class="mail__icon"><img src="img/mail__icon.svg" alt=""></a>
+				</div>
+
+				<div class="burger"></div>
+			</div>
+		</div>
+	</header>
+
+	<main id="main">
+		<section class="top__screen" id="top">
+			<div class="top__video">
+				<video frameborder="0" allowfullscreen autoplay loop>
+					<source src="video/top.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div class="section__wrapper">
+				<div class="top__screen__logo">
+					<img src="img/rewatt__top.png" alt="" class="rewatt__top">
+					<img src="img/russia.svg" alt="" class="mobile__ru">
+				</div>
+				<div class="top__screen__info">
+					<img src="img/russia.svg" alt="">
+					<h1 class="title">РАЗРАБОТАН И <br>СОЗДАН <span class="green fw__800">В РОССИИ</span></h1>
+					<p class="subtitle">Проектируем и производим<br>электрозарядные станции </p>
+					<p class="bold year fw__800">с 2017 года</p>
+					<img src="img/sk__white.svg" alt="" class="sk__white">
+				</div>
+			</div>
+		</section>
+
+		<section class="advantages" id="advantages">
+			<div class="section__wrapper">
+				<div class="section__info">
+					<h2 class="section__title">Преимущества</h2>
+				</div>
+				<div class="section__content">
+					<div class="advantages__items">
+						<div class="item">
+							<div class="item__top">
+								<div class="item__icon">
+									<img src="img/adv__1.svg" alt="">
+								</div>
+								<div class="item__stars">
+									<img src="img/star.svg" alt="">
+									<img src="img/star.svg" alt="">
+									<img src="img/star.svg" alt="">
+									<img src="img/star.svg" alt="">
+									<img src="img/star.svg" alt="">
+								</div>
+							</div>
+							<div class="item__bottom">
+								<h3 class="item__title">01-железо</h3>
+								<div class="item__text">Производство компании REWATT размещено в Москве 
+									на площади 4500 м² и оснащено современным оборудованием, обеспечивающим до 95% технологических операций производственного цикла. Основа производства – стерильный высокотехнологичный цех с собственной линией изготовления печатных плат, а также цех механической обработки.</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item__top">
+								<div class="item__icon">
+									<img src="img/adv__2.svg" alt="">
+								</div>
+								<div class="item__stars">
+									<img src="img/star.svg" alt="">
+									<img src="img/star.svg" alt="">
+									<img src="img/star.svg" alt="">
+									<img src="img/star.svg" alt="">
+									<img src="img/star.svg" alt="">
+								</div>
+							</div>
+							<div class="item__bottom">
+								<h3 class="item__title">02-железо</h3>
+								<div class="item__text">Производство компании REWATT размещено в Москве 
+									на площади 4500 м² и оснащено современным оборудованием, обеспечивающим до 95% технологических операций производственного цикла. Основа производства – стерильный высокотехнологичный цех с собственной линией изготовления печатных плат, а также цех механической обработки.</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item__top">
+								<div class="item__icon">
+									<img src="img/adv__3.svg" alt="">
+								</div>
+								<div class="item__stars">
+									<img src="img/star.svg" alt="">
+									<img src="img/star.svg" alt="">
+									<img src="img/star.svg" alt="">
+									<img src="img/star.svg" alt="">
+									<img src="img/star.svg" alt="">
+								</div>
+							</div>
+							<div class="item__bottom">
+								<h3 class="item__title">03-железо</h3>
+								<div class="item__text">Производство компании REWATT размещено в Москве 
+									на площади 4500 м² и оснащено современным оборудованием, обеспечивающим до 95% технологических операций производственного цикла. Основа производства – стерильный высокотехнологичный цех с собственной линией изготовления печатных плат, а также цех механической обработки.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="products" id="products">
+			<img src="img/product__bg.png" alt="" class="products__bg">
+			<div class="section__wrapper">
+				<div class="section__info">
+					<h2 class="section__title">Мы предлагаем</h2>
+				</div>
+				<div class="section__content">
+					<div class="product__item__wrapper" data-href="https://ya.ru">
+						<div class="product__item active">
+							<div class="product__info">
+								<h3 class="product__name">
+									<span class="name__icon">AC</span>
+									<span class="name">МЮОН</span>
+								</h3>
+								<div class="product__description">Электрозарядная станция переменного тока</div>
+								<div class="product__param power">
+									<span class="param">мощность</span>
+									<span class="value fw__700 green">от 7,4 до 22 кВт</span>
+								</div>
+								<div class="product__param connect">
+									<span class="param">монтаж и подключение</span>
+									<span class="value fw__700 green">30 мин</span>
+								</div>
+								<div class="product__complect">
+									<div class="complect">
+										<div class="complect__img">
+											<img src="img/muon__1.svg" alt="">
+										</div>
+										<span class="complect__value">GB/Т</span>
+									</div>
+									<div class="complect">
+										<div class="complect__img">
+											<img src="img/muon__2.svg" alt="">
+										</div>
+										<span class="complect__value">Type 1</span>
+									</div>
+									<div class="complect">
+										<div class="complect__img">
+											<img src="img/muon__3.svg" alt="">
+										</div>
+										<span class="complect__value">Type 2</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<img src="img/muon.png" alt="" class="product__img">
+					</div>
+
+					<div class="product__item__wrapper" data-href="https://google.ru">
+						<img src="img/reon.png" alt="" class="product__img">
+						<div class="product__item">
+							<div class="product__info">
+								<h3 class="product__name">
+									<span class="name__icon">DC</span>
+									<span class="name">РЕОН</span>
+								</h3>
+								<div class="product__description">Электрозарядная станция постоянного тока</div>
+								<div class="product__param power">
+									<span class="param">мощность</span>
+									<span class="value fw__700 green">от 10 до 40 кВт</span>
+								</div>
+								<div class="product__param connect">
+									<span class="param">монтаж и подключение</span>
+									<span class="value fw__700 green">1 час</span>
+								</div>
+								<div class="product__complect">
+									<div class="complect">
+										<div class="complect__img">
+											<img src="img/reon__1.svg" alt="">
+										</div>
+										<span class="complect__value">GB/Т</span>
+									</div>
+									<div class="complect">
+										<div class="complect__img">
+											<img src="img/reon__2.svg" alt="">
+										</div>
+										<span class="complect__value">Type 1</span>
+									</div>
+									<div class="complect">
+										<div class="complect__img">
+											<img src="img/reon__3.svg" alt="">
+										</div>
+										<span class="complect__value">Type 2</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mobile__product__wrapper">
+					<div class="product__item">
+						<div class="product__info">
+							<div class="product__description">Электрозарядная станция постоянного тока</div>
+							<div class="product__param power">
+								<span class="param">мощность</span>
+								<span class="value fw__700 green">от 7,4 до 22 кВт</span>
+							</div>
+							<div class="product__param connect">
+								<span class="param">монтаж и подключение</span>
+								<span class="value fw__700 green">30 мин</span>
+							</div>
+							<div class="product__complect">
+								<div class="complect">
+									<div class="complect__img">
+										<img src="img/reon__1.svg" alt="">
+									</div>
+									<span class="complect__value">GB/Т</span>
+								</div>
+								<div class="complect">
+									<div class="complect__img">
+										<img src="img/reon__2.svg" alt="">
+									</div>
+									<span class="complect__value">Type 1</span>
+								</div>
+								<div class="complect">
+									<div class="complect__img">
+										<img src="img/reon__3.svg" alt="">
+									</div>
+									<span class="complect__value">Type 2</span>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="product__btn">Подробнее</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="stats">
+			<div class="section__wrapper">
+				<div class="stats__wrapper">
+					<div class="stat__item">
+						<div class="stat__value">
+							500 000 <span class="stat__ed">кВт∙ч</span>
+						</div>
+						<div class="stat__description">электроэнергии отпущено</div>
+					</div>
+					<div class="stat__item">
+						<div class="stat__value">
+							1200
+						</div>
+						<div class="stat__description">станций произведено</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="city">
+			<div class="section__wrapper">
+				<img src="img/city.png" alt="">
+			</div>
+		</section>
+
+		<section class="places" id="apply">
+			<div class="section__wrapper">
+				<div class="section__info">
+					<h2 class="section__title">
+						ТОП 7 МЕСТ
+						<span class="section__subtitle white">ДЛЯ УСТАНОВКИ АЗС</span>
+					</h2>
+
+					<div class="arrows">
+						<div class="arrow left"><img src="img/slider__arrow.svg" alt=""></div>
+						<div class="arrow right"><img src="img/slider__arrow.svg" alt=""></div>
+					</div>
+				</div>
+
+				<div class="section__content">
+					<div class="slider__wrapper">
+						<div class="slider swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide item">
+									<div class="item__top">
+										<div class="item__num">01</div>
+										<div class="item__icon">
+											<img src="img/slider__1.svg" alt="">
+										</div>
+									</div>
+									<div class="item__bottom">
+										<h3 class="item__title">B2B</h3>
+										<div class="item__text">Полный пакет услуг по развертыванию сетей ЭЗС. Мы имеем большой опыт и понимание тенденций которые позволяют нам с полной ответственностью предлагать самые перспективные городские локации на Ваш выбор.</div>
+									</div>
+								</div>
+								<div class="swiper-slide item">
+									<div class="item__top">
+										<div class="item__num">02</div>
+										<div class="item__icon">
+											<img src="img/slider__2.svg" alt="">
+										</div>
+									</div>
+									<div class="item__bottom">
+										<h3 class="item__title">B2B</h3>
+										<div class="item__text">Полный пакет услуг по развертыванию сетей ЭЗС. Мы имеем большой опыт и понимание тенденций которые позволяют нам с полной ответственностью предлагать самые перспективные городские локации на Ваш выбор.</div>
+									</div>
+								</div>
+								<div class="swiper-slide item">
+									<div class="item__top">
+										<div class="item__num">03</div>
+										<div class="item__icon">
+											<img src="img/slider__3.svg" alt="">
+										</div>
+									</div>
+									<div class="item__bottom">
+										<h3 class="item__title">B2B</h3>
+										<div class="item__text">Полный пакет услуг по развертыванию сетей ЭЗС. Мы имеем большой опыт и понимание тенденций которые позволяют нам с полной ответственностью предлагать самые перспективные городские локации на Ваш выбор.</div>
+									</div>
+								</div>
+								<div class="swiper-slide item">
+									<div class="item__top">
+										<div class="item__num">04</div>
+										<div class="item__icon">
+											<img src="img/slider__4.svg" alt="">
+										</div>
+									</div>
+									<div class="item__bottom">
+										<h3 class="item__title">B2B</h3>
+										<div class="item__text">Полный пакет услуг по развертыванию сетей ЭЗС. Мы имеем большой опыт и понимание тенденций которые позволяют нам с полной ответственностью предлагать самые перспективные городские локации на Ваш выбор.</div>
+									</div>
+								</div>
+								<div class="swiper-slide item">
+									<div class="item__top">
+										<div class="item__num">05</div>
+										<div class="item__icon">
+											<img src="img/slider__1.svg" alt="">
+										</div>
+									</div>
+									<div class="item__bottom">
+										<h3 class="item__title">B2B</h3>
+										<div class="item__text">Полный пакет услуг по развертыванию сетей ЭЗС. Мы имеем большой опыт и понимание тенденций которые позволяют нам с полной ответственностью предлагать самые перспективные городские локации на Ваш выбор.</div>
+									</div>
+								</div>
+								<div class="swiper-slide item">
+									<div class="item__top">
+										<div class="item__num">06</div>
+										<div class="item__icon">
+											<img src="img/slider__1.svg" alt="">
+										</div>
+									</div>
+									<div class="item__bottom">
+										<h3 class="item__title">B2B</h3>
+										<div class="item__text">Полный пакет услуг по развертыванию сетей ЭЗС. Мы имеем большой опыт и понимание тенденций которые позволяют нам с полной ответственностью предлагать самые перспективные городские локации на Ваш выбор.</div>
+									</div>
+								</div>
+								<div class="swiper-slide item">
+									<div class="item__top">
+										<div class="item__num">07</div>
+										<div class="item__icon">
+											<img src="img/slider__1.svg" alt="">
+										</div>
+									</div>
+									<div class="item__bottom">
+										<h3 class="item__title">B2B</h3>
+										<div class="item__text">Полный пакет услуг по развертыванию сетей ЭЗС. Мы имеем большой опыт и понимание тенденций которые позволяют нам с полной ответственностью предлагать самые перспективные городские локации на Ваш выбор.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="arrows mobile__arrows">
+					<div class="arrow left"><img src="img/slider__arrow.svg" alt=""></div>
+					<div class="arrow right"><img src="img/slider__arrow.svg" alt=""></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="about" id="about">
+			<div class="section__wrapper">
+				<div class="section__info">
+					<h2 class="section__title about__title">Уже сегодня мы готовы к реализации перспективных технологий завтрашнего дня</h2>
+				</div>
+				<div class="section__content">
+					<div class="about__description">
+						<p>Наш научно-конструкторский центр ведет собственные передовые разработки электрозарядных систем, руководствуясь актуальными мировыми трендами. Наши решения предназначены для создания публичной зарядной инфраструктуры в городе и на междугородных магистралях, а также для установки индивидуальных зарядных точек в частном секторе.</p>
+						<p>На испытательных стендах REWATT мы тестируем наше оборудование на совместимость с электромобилями различных марок и комплектаций. По результатам этих исследований мы разрабатываем индивидуальные зарядные микропрограммы, учитывающие особенности каждого электромобиля и устанавливаем их через систему сервисной поддержки на все станции, которые уже находятся в эксплуатации. Это обеспечивает совместимость нашей зарядной платформы как с текущей линейкой электромобилей, так и с теми моделями, которые появятся в обозримом будущем.</p>
+					</div>
+
+					<div class="about__media">
+						<img src="img/yandex.png" alt="">
+						<img src="img/parking.png" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="partners" id="partners">
+			<div class="section__wrapper">
+				<div class="section__info">
+					<h2 class="section__title">Наши партнеры</h2>
+				</div>
+				<div class="partners__list swiper">
+					<div class="swiper-wrapper">
+						<div class="partner__item swiper-slide">
+							<img src="img/partner__1.png" alt="">
+						</div>
+						<div class="partner__item swiper-slide">
+							<img src="img/partner__2.png" alt="">
+						</div>
+						<div class="partner__item swiper-slide">
+							<img src="img/partner__3.png" alt="">
+						</div>
+						<div class="partner__item swiper-slide">
+							<img src="img/partner__4.png" alt="">
+						</div>
+						<div class="partner__item swiper-slide">
+							<img src="img/partner__5.png" alt="">
+						</div>
+						<div class="partner__item swiper-slide">
+							<img src="img/partner__1.png" alt="">
+						</div>
+						<div class="partner__item swiper-slide">
+							<img src="img/partner__2.png" alt="">
+						</div>
+						<div class="partner__item swiper-slide">
+							<img src="img/partner__3.png" alt="">
+						</div>
+						<div class="partner__item swiper-slide">
+							<img src="img/partner__4.png" alt="">
+						</div>
+						<div class="partner__item swiper-slide">
+							<img src="img/partner__5.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="call" id="contacts">
+			<div class="section__wrapper column align__items__center mw__1245">
+				<h2 class="section__title white fz__72">Свяжитесь с нами,<br>чтобы совершить покупку<br>или узнать больше</h2>
+				<a href="#" class="call__btn modal__btn">
+					<span class="icon"><img src="img/call__icon.svg" alt=""></span>
+					<span class="btn__text">Оставить заявку</span>
+				</a>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="section__wrapper">
+			<div class="footer__top">
+				<div class="address">Москва<br>ул. Рябиновая дом 40,<br>строение 1</div>
+				<div class="contacts">
+					<a href="tel:+7 (495) 115-99-51" class="footer__phone contact__link">+7 (495) 115-99-51</a>
+					<a href="mailto:info@rewatt.tech" class="footer__mail contact__link">info@rewatt.tech</a>
+				</div>
+			</div>
+
+			<div class="footer__bottom">
+				<div class="footer__links">
+					<div class="footer__logos">
+						<a href="#" class="fond"><img src="img/fond.svg" alt=""></a>
+						<a href="https://sk.ru" class="sk"><img src="img/sk__member.svg" alt=""></a>
+					</div>
+					<a href="#main" class="top__btn"><img src="img/arrow__top.svg" alt=""></a>
+				</div>
+				<div class="footer__info">
+					<div class="copyright">Все права защищены © 2023 Rewatt</div>
+					<a href="#" class="cookie footer__link">Согласие на обработку файлов cookies</a>
+					<a href="#" class="politics footer__link">Политика о персональных данных</a>
+					<div class="developer">
+						Сайт разработан - <a href="https://beznebes.ru/" class="bznbs">BEZNEBES</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>	
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+	<script>
+		SmoothScroll({
+			animationTime    : 800,
+			stepSize         : 75,
+	
+			
+			accelerationDelta : 30,  
+			accelerationMax   : 2,   
+	
+	
+			keyboardSupport   : true,  
+			arrowScroll       : 50,
+	
+	
+			pulseAlgorithm   : true,
+			pulseScale       : 4,
+			pulseNormalize   : 1,
+	
+			touchpadSupport   : true,
+		})
+	</script>
+	<script src="js/init.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>
